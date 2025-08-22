@@ -1302,6 +1302,36 @@ section,
   color: color-mix(in srgb, var(--heading-color), transparent 30%);
 }
 
+.skills .skill-item .skill-level {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skills .skill-item .skill-level.beginner {
+   background-color: #fd7e14;
+  
+  color: #ffffff;
+} 
+
+.skills .skill-item .skill-level.intermediate {
+ background-color: #17a2b8;
+  color: #ffffff;
+}
+
+.skills .skill-item .skill-level.advanced {
+  background-color: #198754;
+  color: #ffffff;
+}
+
+.skills .skill-item .skill-level.expert {
+  background-color: #6f42c1;
+  color: #ffffff;
+}
+
 .skills .skill-item .progress {
   height: 8px;
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
@@ -1316,6 +1346,47 @@ section,
   width: 0;
   height: 100%;
   border-radius: 20px;
+}
+
+.skills .skill-item .skill-bars {
+  display: flex;
+  gap: 4px;
+  margin: 8px 0;
+}
+
+.skills .skill-item .skill-bar {
+  flex: 1;
+  height: 8px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.skills .skill-item .skill-bar.beginner {
+    background-color: #fd7e14;
+}
+
+.skills .skill-item .skill-bar.intermediate {
+  background-color: #17a2b8;
+
+}
+
+.skills .skill-item .skill-bar.advanced {
+  background-color: #198754;
+}
+
+.skills .skill-item .skill-bar.expert {
+  background-color: #6f42c1;
+}
+
+.skills .skill-item h4 i {
+  margin-right: 8px;
+  color: var(--accent-color);
+}
+
+.skills .skills-category h3 i {
+  margin-right: 10px;
+  color: var(--accent-color);
 }
 
 .skills .skill-item .skill-tooltip {
